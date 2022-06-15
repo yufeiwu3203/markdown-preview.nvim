@@ -31,7 +31,7 @@ module.exports = function opener(args, tool) {
             command = 'open';
             if (tool) {
                 args.unshift(tool);
-                args.unshift('-a');
+                args.unshift('-ga');
             }
             break;
         }
