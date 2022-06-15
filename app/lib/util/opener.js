@@ -28,10 +28,10 @@ module.exports = function opener(args, tool) {
             break;
         }
         case 'darwin': {
-            command = 'open';
+            command = 'open -g';
             if (tool) {
                 args.unshift(tool);
-                args.unshift('-ga');
+                args.unshift('-a');
             }
             break;
         }
