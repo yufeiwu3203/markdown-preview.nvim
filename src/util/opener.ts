@@ -31,10 +31,11 @@ module.exports = function opener(
       break
     }
     case 'darwin': {
-      command = 'open -g'
+      command = 'open'
       if (tool) {
         args.unshift(tool)
         args.unshift('-a')
+        args.unshift('-g')
       }
       break
     }
